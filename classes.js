@@ -264,7 +264,7 @@ class Inventory{
       this.img = this.item.img;
      if(this.img === berry || this.img === apple || this.img === elixir){
       image(this.img, this.x, this.y, this.size, this.size);
-      text('+' + this.item.health + ' health', this.x, this.y + this.size + 15);
+      text('+' + this.item.health + ' health', this.x, this.y + this.size + 10);
      } else {
       push();
       translate(this.x+this.size-10,this.y);
@@ -272,7 +272,7 @@ class Inventory{
       image(this.img, 0,0, this.item.xsize*2.5, this.item.ysize*2.5);
        
       pop();
-      text('+' + this.item.atk + ' atk', this.x, this.y + this.size + 15);
+      text('+' + this.item.atk + ' atk', this.x + 2, this.y + 20);
      }
    }
     //if(this.img)
