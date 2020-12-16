@@ -1,3 +1,4 @@
+
 function displayHP(player, h){
     h = player.hp;
     h = map(h, 0, 20, 0, 100);

@@ -23,7 +23,7 @@ function preload(){
 
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windowHeight, windowHeight);
  
   textFont(font);
   
@@ -34,6 +34,7 @@ function setup() {
 
 function draw() {
   background(220);
+  //windowResized();
   
   if(gameState === 'intro'){
     //display introduction screen
@@ -317,3 +318,12 @@ inventoryUp(tutorialWeapons,tutorialItems,tutInventoryMenu);
   }
 }
 
+function windowResized(){
+    resizeCanvas(windowHeight,windowHeight);
+    reposition();
+}
+
+function reposition(){
+    width = windowHeight;
+    height = windowHeight;
+}
