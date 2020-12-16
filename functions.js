@@ -477,7 +477,7 @@ function generateWorld(){
   }
   
   for(let i = 0; i<6; i++){
-    itemInventory.push(new Inventory(((boxWidth*(i))+boxWidth/6),height - 105,boxWidth*4/6));
+    itemInventory.push(new Inventory(((boxWidth*(i))+boxWidth/6),height - 100,boxWidth*4/6));
   }
   
   //set sword to default
