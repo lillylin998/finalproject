@@ -6,7 +6,7 @@ class Player {
     this.vy = 1.5;
     this.size = 40;
     this.isDead = false;
-    this.hp = 50;
+    this.hp = 20;
     this.faceLeft = false;
     this.faceRight = true;
     this.imgRight = fairyRight;

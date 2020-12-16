@@ -1,7 +1,7 @@
 
 function displayHP(player, h){
     h = player.hp;
-    h = map(h, 0, 20, 0, 100);
+    h = map(h, 0, 20, 0, 250);
    // print(health);
   textAlign(LEFT);
   textSize(15)
@@ -12,7 +12,7 @@ function displayHP(player, h){
     rect(10,10,h,20);
     fill(255);
     text('HP', 10, 50);
-    text(player.hp + '/50', 225,50);
+    text(player.hp + '/20', 225,50);
 }
 
 function displayIntro(){
@@ -427,7 +427,7 @@ function displayTutorial(){
 
 function generateTutorial(){
   tutorialPlayer = new Player(width/2, height/2);
-  tutorialPlayer.hp = 25;
+  tutorialPlayer.hp = 10;
   tutorialSword = new Sword(tutorialPlayer.x, tutorialPlayer.y, 10, 'tree branch', 1,treeBranch);
   tutorialItem = new Item(width/2,height/2,5,'berry',5,berry);
   tutorialChest.push(new Chest(width/2, height/2));
