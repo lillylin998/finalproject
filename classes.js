@@ -268,7 +268,7 @@ class Inventory{
       push();
       translate(this.x+this.size-10,this.y);
       rotate(PI/4);
-      image(this.img, 0,0, this.item.xsize*2, this.item.ysize*2);
+      image(this.img, 0,0, this.item.xsize*2.5, this.item.ysize*2.5);
        
       pop();
      }
