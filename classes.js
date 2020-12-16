@@ -288,8 +288,8 @@ class Inventory{
   //for items only not weapons
   use(player){
     player.hp += 5;
-    if(player.hp >50){
-      player.hp = 50;
+    if(player.hp >20){
+      player.hp = 20;
     }
     print(player.hp)
   }
