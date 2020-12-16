@@ -2,8 +2,8 @@ class Player {
   constructor(x,y){
     this.x = x;
     this.y = y;
-    this.vx = 1;
-    this.vy = 1;
+    this.vx = 1.5;
+    this.vy = 1.5;
     this.size = 40;
     this.isDead = false;
     this.hp = 50;

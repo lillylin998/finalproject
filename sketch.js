@@ -23,7 +23,7 @@ function preload(){
 
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(800, 800);
  
   textFont(font);
   
